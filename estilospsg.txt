@@ -1,0 +1,177 @@
+/* --- Estilos Generales --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0b0b45, #06061e);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Header --- */
+header {
+    background-color: #14143b;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #007bff;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+/* --- Enlace Principal --- */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+a:hover {
+    color: #00aaff;
+}
+
+/* --- Sección Principal --- */
+main {
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    padding: 30px;
+    background: rgba(20, 20, 60, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+/* --- Titulos y Textos --- */
+h2, h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #00aaff;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+/* --- Tabla de Estadísticas --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #007bff;
+    padding: 12px;
+    text-align: center;
+    color: #ffffff;
+}
+
+th {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+td {
+    background-color: rgba(20, 20, 60, 0.8);
+}
+
+/* --- Imagen --- */
+img {
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* --- Separador --- */
+hr {
+    border: none;
+    border-top: 1px solid #007bff;
+    margin: 20px 0;
+}
+
+/* --- Efecto de Hover en la Sección Principal --- */
+main:hover {
+    background: rgba(30, 30, 80, 0.95);
+    transition: background 0.3s ease;
+}
+
+/* --- Imágenes Laterales Fijas --- */
+.fixed-image {
+    position: fixed;
+    top: 0;
+    width: 150px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(20, 20, 60, 0.8);
+    padding: 10px;
+    z-index: 1000;
+}
+
+/* Alineación específica para las imágenes laterales */
+.fixed-image.left {
+    left: 0;
+}
+
+.fixed-image.right {
+    right: 0;
+}
+
+.fixed-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Oculta las imágenes fijas en pantallas pequeñas */
+    .fixed-image {
+        display: none;
+    }
+}

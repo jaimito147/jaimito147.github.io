@@ -1,0 +1,149 @@
+/* --- Estilos Generales --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #f0f0f0;
+    background: linear-gradient(135deg, #1e3d58, #4a6270);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* --- Encabezado Principal --- */
+header {
+    background-color: #00274d;
+    padding: 20px 0;
+    color: #ffd700;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* --- Enlace Principal --- */
+a {
+    color: #ffd700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 15px 0;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ffd700;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+a:hover {
+    background-color: #ffd700;
+    color: #00274d;
+    border-color: #ffd700;
+}
+
+/* --- Sección Principal --- */
+main {
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgba(0, 39, 77, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h2, h3 {
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #f0f0f0;
+}
+
+/* --- Imagen con Estilos --- */
+img {
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* --- Separador --- */
+hr {
+    border: none;
+    border-top: 1px solid #ffd700;
+    margin: 20px 0;
+}
+
+/* Estilos para los contenedores de imágenes laterales */
+.fixed-image {
+    position: fixed;
+    top: 0;
+    width: auto;        /* Ajusta el ancho según el tamaño de la imagen */
+    height: 100vh;      /* La altura ocupa toda la pantalla */
+    overflow: hidden;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fixed-image.left {
+    left: 0; /* Fija la imagen al lado izquierdo */
+}
+
+.fixed-image.right {
+    right: 0; /* Fija la imagen al lado derecho */
+}
+
+/* Estilos para las imágenes dentro de los laterales */
+.fixed-image img {
+    max-width: 100%;    /* La imagen se adapta al ancho del contenedor */
+    max-height: 100vh;  /* La imagen se adapta a la altura de la pantalla */
+    height: auto;       /* Ajuste automático de la altura para mantener proporción */
+    width: auto;        /* Ajuste automático del ancho para mantener proporción */
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+}

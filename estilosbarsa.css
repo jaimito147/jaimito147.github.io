@@ -1,0 +1,178 @@
+/* --- Estilos Generales --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #f0f0f0;
+    background: linear-gradient(135deg, #1e3d58, #4a6270);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* --- Encabezado Principal --- */
+header {
+    background-color: #00274d;
+    color: #ffd700;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 30px 0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 5; /* Asegura que el título quede encima de las imágenes laterales */
+    max-width: calc(100% - 400px); /* Evita que las imágenes laterales tapen el título */
+    width: 100%;
+    margin: 0 auto; /* Centra el encabezado */
+    padding-left: 20px;  /* Ajusta si es necesario */
+    padding-right: 20px; /* Ajusta si es necesario */
+}
+
+header h1 {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* --- Enlace Principal --- */
+a {
+    color: #ffd700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00274d;
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+    text-align: center;
+    z-index: 10; /* Asegura que el enlace esté por encima de las imágenes laterales */
+}
+
+a:hover {
+    background-color: #ffd700;
+    color: #00274d;
+    transform: scale(1.05);
+}
+
+/* --- Separador --- */
+hr {
+    border: none;
+    border-top: 1px solid #ffd700;
+    margin: 20px 0;
+}
+
+/* --- Sección Principal --- */
+main {
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgba(0, 39, 77, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* --- Tabla de Estadísticas --- */
+table {
+    margin: 20px auto;
+    width: 80%;
+    border-collapse: collapse;
+    color: #f0f0f0;
+    font-size: 1.1rem;
+}
+
+table, th, td {
+    border: 1px solid #ffd700;
+    padding: 10px;
+}
+
+th {
+    background-color: #1e3d58;
+    font-weight: bold;
+}
+
+td {
+    background-color: rgba(30, 61, 88, 0.7);
+}
+
+tr:nth-child(even) td {
+    background-color: rgba(40, 70, 100, 0.7);
+}
+
+/* --- Imagen con Estilos --- */
+img {
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* --- Estilos para los contenedores de imágenes laterales */
+.fixed-image {
+    position: fixed;
+    top: 0;
+    width: auto;        /* Ajusta el ancho según el tamaño de la imagen */
+    height: 100vh;      /* La altura ocupa toda la pantalla */
+    overflow: hidden;
+    z-index: 1;         /* Asegura que las imágenes estén por detrás del contenido */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fixed-image.left {
+    left: 0; /* Fija la imagen al lado izquierdo */
+}
+
+.fixed-image.right {
+    right: 0; /* Fija la imagen al lado derecho */
+}
+
+/* Estilos para las imágenes dentro de los laterales */
+.fixed-image img {
+    max-width: 100%;    /* La imagen se adapta al ancho del contenedor */
+    max-height: 100vh;  /* La imagen se adapta a la altura de la pantalla */
+    height: auto;       /* Ajuste automático de la altura para mantener proporción */
+    width: auto;        /* Ajuste automático del ancho para mantener proporción */
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    a {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+

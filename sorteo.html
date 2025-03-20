@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteo</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Cabecera */
+        h1 {
+            text-align: center;
+            color: #0052cc;
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Enlace a la página principal */
+        .back-link {
+            text-align: center;
+            display: block;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #0052cc;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            color: #ff9933;
+        }
+
+        /* Formulario */
+        .form-container {
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #0052cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #ff9933;
+        }
+
+        /* Estilo para el formulario al recibir foco */
+        .form-container input:focus {
+            border-color: #0052cc;
+        }
+
+    </style>
+</head>
+<body>
+
+    <a href="Biografia de Messi.html" class="back-link">Pincha aquí para ir a la página principal</a>
+    <h1> Rellena los huecos para participar en el sorteo </h1>
+    <h2>Formulario</h2>
+
+    <!-- Formulario -->
+    <div class="form-container">
+        <form>
+            <p>Introduce tu nombre:</p>
+            <input type="text" placeholder="Tu nombre" required>
+
+            <p>Introduce tu correo electrónico:</p>
+            <input type="email" placeholder="ejemplo@gmail.com" required>
+
+            <p>Introduce tu fecha de nacimiento:</p>
+            <input type="date" required>
+
+            <input type="submit" value="Participar en el sorteo">
+        </form>
+    </div>
+
+</body>
+</html>

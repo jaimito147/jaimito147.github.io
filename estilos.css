@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fondo claro */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Texto oscuro */
+    position: relative; /* Necesario para el posicionamiento absoluto de las imágenes laterales */
+}
+
+/* Header Section */
+.header {
+    background-color: #0052cc; /* Azul */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 5px solid #ff9933; /* Borde naranja */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Contenedor Principal */
+.main-container {
+    max-width: 1200px;
+    margin:auto; /* Centrar el contenedor */
+    padding: 20px;
+}
+
+/* Section Styling */
+.section {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+h2, h3 {
+    color: #0052cc;
+}
+
+/* Link Section */
+.section a {
+    display: block;
+    margin: 5px 0;
+    color: #ff9933; /* Naranja */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.section a:hover {
+    color: #0052cc;
+}
+
+/* Imágenes de Messi (Centro) */
+.images {
+    display: flex;
+    justify-content: center; /* Centra las imágenes */
+    align-items: center; /* Centra las imágenes verticalmente */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.images img {
+    border-radius: 10px;
+    border: 3px solid #0052cc; /* Borde azul */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Imágenes laterales de Messi */
+.side-images {
+    display: flex;
+    justify-content: space-between; /* Para que las imágenes se distribuyan a los lados */
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    z-index: -1; /* Coloca las imágenes detrás del contenido */
+    padding: 0 30px;
+}
+
+.side-image {
+    width: 250px;
+    height: 500px;
+    border-radius: 10px;
+    border: 3px solid #0052cc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #0052cc;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
